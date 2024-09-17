@@ -1,20 +1,16 @@
-import Button from '@/components/Button';
-import { styled } from '@linaria/react';
+import Button from "@/components/Button";
+import styles from "./styles.module.css";
 
 function AboutPage() {
   return (
-    <AboutWrapper>
+    <div className={styles.aboutWrapper}>
       Hello World
       <br />
       <Button>Magenta button</Button>
       <br />
       <a href="/">Go to homepage</a>
-    </AboutWrapper>
+    </div>
   );
 }
-
-const AboutWrapper = styled.div`
-  --css-file: about-page;
-`;
 
 export default AboutPage;

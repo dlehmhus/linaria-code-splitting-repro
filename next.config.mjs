@@ -1,6 +1,3 @@
-// next.config.js
-import withLinaria from 'next-with-linaria';
+const nextConfig = {};
 
-const config = {};
-
-export default withLinaria(config);
+export default nextConfig;

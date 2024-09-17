@@ -1,13 +1,8 @@
-import React from 'react';
-import { styled } from '@linaria/react';
+import React from "react";
+import styles from "./styles.module.css";
 
 function Button({ children }: { children: React.ReactNode }) {
-  return <Btn>{children}</Btn>;
+  return <button className={styles.button}>{children}</button>;
 }
-
-const Btn = styled.button`
-  --css-file: button;
-  color: magenta;
-`;
 
 export default Button;
